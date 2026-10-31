@@ -1,0 +1,103 @@
+/*
+ * CCDuo design tokens
+ * Source: Figma「00 · 品牌与界面组件」· 颜色 / Dark
+ * 1440 × 900 · 232 px 侧栏 · 36 px 内容边距 · 12 px 卡片圆角
+ */
+:root {
+  color-scheme: dark;
+
+  /* ── Color · surfaces ───────────────────────── */
+  /* Each layer steps up clearly from the one below it so cards and buttons separate from the page. */
+  --color-sunken: #0e0f11;        /* sidebar */
+  --color-canvas: #121316;        /* app background, input wells */
+  --color-surface: #202127;       /* cards, panels */
+  --color-raised: #2c2d35;        /* secondary button, selected item, avatar */
+  --color-raised-hover: #35363f;
+  --color-raised-pressed: #26272e;
+  --color-border: #2e2f37;        /* hairlines, card strokes */
+  --color-border-strong: #3d3e48; /* control strokes: buttons, fields, segmented */
+  --color-logo-plate: #17181c;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.025) inset, 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 16px rgba(0, 0, 0, 0.18);
+
+  /* ── Color · content ────────────────────────── */
+  --color-text: #f4efe6;
+  --color-text-muted: #a3a3a8;
+  --color-text-on-accent: #0e0f11;
+
+  /* ── Color · semantic ───────────────────────── */
+  --color-accent: #f2a541;
+  --color-accent-hover: #f5b45e;
+  --color-accent-pressed: #e0963a;
+  --color-accent-soft: #30271d;  /* 需要处理 / 当前使用 badge */
+  --color-success: #4fd1a5;
+  --color-success-soft: #182a25;
+  --color-danger: #f08a6e;
+  --color-danger-hover: #f39d85;
+  --color-danger-soft: #33221e;
+  --color-neutral-soft: #2c2d35;
+
+  --color-focus-ring: rgba(242, 165, 65, 0.45);
+  --color-overlay-hover: rgba(244, 239, 230, 0.06);
+  --color-overlay-press: rgba(244, 239, 230, 0.09);
+
+  /* ── Typography ─────────────────────────────── */
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-brand: "Space Grotesk", var(--font-sans);
+  --font-latin: "Inter", var(--font-sans);
+  --font-mono: Menlo, "SF Mono", ui-monospace, monospace;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* size / line-height pairs (1.5 ratio, from Figma text layers) */
+  --text-display: 26px;  --leading-display: 39px;  /* page title */
+  --text-headline: 22px; --leading-headline: 33px; /* identity name */
+  --text-figure: 23px;   --leading-figure: 35px;   /* window name on summary */
+  --text-title: 17px;    --leading-title: 26px;    /* section / card title */
+  --text-subtitle: 16px; --leading-subtitle: 24px;
+  --text-label: 15px;    --leading-label: 23px;    /* step label */
+  --text-body: 14px;     --leading-body: 21px;
+  --text-small: 13px;    --leading-small: 20px;
+  --text-caption: 12px;  --leading-caption: 18px;
+  --text-micro: 11px;    --leading-micro: 17px;
+  --text-nano: 10px;     --leading-nano: 15px;
+
+  /* ── Spacing (4-based) ──────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-12: 48px;
+
+  /* ── Radius ─────────────────────────────────── */
+  --radius-xs: 1px;   /* active markers */
+  --radius-field: 6px;
+  --radius-segment: 7px;
+  --radius-control: 8px; /* button, badge */
+  --radius-item: 10px;   /* nav item, avatar */
+  --radius-card: 12px;
+  --radius-window: 16px;
+  --radius-tile: 20px;   /* 56 px identity tile */
+  --radius-pill: 999px;
+
+  /* ── Sizing ─────────────────────────────────── */
+  --sidebar-width: 232px;
+  --topbar-height: 76px;
+  --content-gutter: 36px;
+  --control-height: 40px;
+  --control-height-sm: 36px;
+  --control-height-xs: 32px;
+  --field-label-width: 112px;
+
+  /* ── Motion ─────────────────────────────────── */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-slow: 320ms;
+}

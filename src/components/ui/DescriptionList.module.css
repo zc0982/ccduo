@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dl-gap);
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: var(--dl-label) minmax(0, 1fr);
+  align-items: center;
+  min-height: 21px;
+}
+
+.label {
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.value {
+  margin: 0;
+  min-width: 0;
+  color: var(--color-text);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  overflow-wrap: anywhere;
+}
+
+.subtitle .value {
+  font-size: var(--text-subtitle);
+  line-height: var(--leading-subtitle);
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

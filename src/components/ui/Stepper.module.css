@@ -1,0 +1,72 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.marker {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: var(--text-body);
+  line-height: 1;
+  font-weight: var(--weight-medium);
+  font-variant-numeric: tabular-nums;
+  transition:
+    background-color var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out);
+}
+
+.label {
+  width: 188px;
+  font-size: var(--text-label);
+  line-height: var(--leading-label);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+}
+
+.connector {
+  width: 108px;
+  height: 1px;
+  margin-right: var(--space-6);
+  background: var(--color-border);
+}
+
+.step:last-child .label {
+  width: auto;
+}
+
+.done .marker {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.current .marker {
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+
+.upcoming .marker {
+  background: var(--color-raised);
+  color: var(--color-text-muted);
+}
+
+.done .label,
+.current .label {
+  color: var(--color-text);
+}
+
+.upcoming .label {
+  color: var(--color-text-muted);
+}

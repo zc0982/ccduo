@@ -1,0 +1,419 @@
+/* ── Page scaffolding ───────────────────────────── */
+.stepper {
+  margin-top: 25px;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 20px;
+  animation: stage-in var(--duration-slow) var(--ease-out);
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+.w82 { width: 82px; flex: none; }
+.w112 { width: 112px; }
+.w148 { width: 148px; }
+.w152 { width: 152px; }
+.w160 { width: 160px; }
+.w176 { width: 176px; }
+.w180 { width: 180px; }
+.w216 { width: 216px; }
+.w300 { width: 300px; max-width: 100%; }
+
+.micro {
+  color: var(--color-text-muted);
+  font-size: var(--text-micro);
+  line-height: var(--leading-micro);
+}
+
+/* ── Step 1 · 关联浏览器窗口 ─────────────────────── */
+.windowGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 544fr) minmax(0, 572fr);
+  gap: 20px;
+  flex: 1;
+  min-height: 558px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+}
+
+.paste {
+  height: 48px;
+  min-height: 48px;
+  padding: 3px 12px;
+  line-height: 20px;
+}
+
+.firstRow {
+  margin-top: 6px;
+}
+
+.stackLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.modeBlock {
+  margin-top: 19px;
+}
+
+.modeBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  animation: stage-in var(--duration-base) var(--ease-out);
+}
+
+.feature {
+  display: flex;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.featureIcon {
+  flex: none;
+  margin-top: 4px;
+  color: var(--color-accent);
+}
+
+.featureTitle {
+  font-size: var(--text-subtitle);
+  line-height: var(--leading-subtitle);
+  font-weight: var(--weight-medium);
+}
+
+.featureText {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.modeDivider {
+  margin: 30px 0 23px;
+}
+
+.testRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 37px;
+}
+
+/* 添加代理IP */
+.customRows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.customRows > :nth-child(2) {
+  margin-top: 8px;
+}
+
+.hostRow {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr) 88px;
+  gap: 8px;
+}
+
+.checkRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 148px;
+  gap: 12px;
+}
+
+.checkHint {
+  display: block;
+  margin-left: calc(-1 * var(--field-label-width));
+}
+
+.ok {
+  color: var(--color-success);
+}
+
+.bad {
+  color: var(--color-danger);
+}
+
+/* 选择代理 */
+.poolRow {
+  margin-top: 20px;
+}
+
+.poolRow p {
+  font-size: var(--text-caption);
+  line-height: var(--leading-caption);
+  margin-top: 14px;
+}
+
+.poolDivider {
+  margin: 23px 0 23px;
+}
+
+.poolTest {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 33px;
+}
+
+/* 基础设置 */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 17px;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 190fr) minmax(0, 218fr);
+  gap: 12px;
+}
+
+.enginePair {
+  display: grid;
+  grid-template-columns: minmax(0, 230fr) minmax(0, 178fr);
+  gap: 12px;
+}
+
+.uaRow {
+  display: flex;
+  gap: 12px;
+}
+
+.urlRow {
+  margin-top: 4px;
+}
+
+.urlRow p {
+  margin-top: 2px;
+  font-size: var(--text-nano);
+  line-height: var(--leading-nano);
+}
+
+.urls {
+  min-height: 48px;
+  max-height: 96px;
+  padding-top: 8px;
+}
+
+.matchRows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.matchRows > * > label {
+  padding-top: 8px;
+}
+
+.fingerprint {
+  margin-top: auto;
+  padding-top: 13px;
+}
+
+.fingerprint svg {
+  color: var(--color-text-muted);
+}
+
+/* ── Step 2 · 添加账号 ─────────────────────────── */
+.confirm {
+  display: grid;
+  grid-template-columns: minmax(0, 680fr) minmax(0, 432fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.accountCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 438px;
+  padding: 19px 23px 24px;
+}
+
+.accountCard > header {
+  padding: 0;
+}
+
+.nameRow {
+  margin-top: 34px;
+}
+
+.accountDivider {
+  margin: 42px 0 31px;
+}
+
+.accountCard .feature {
+  margin-top: 0;
+  gap: 20px;
+}
+
+.passwordNote {
+  margin-top: 62px;
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.submitError {
+  margin-top: 12px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px 0;
+}
+
+.summaryTitle {
+  font-size: var(--text-title);
+  line-height: var(--leading-title);
+  font-weight: var(--weight-medium);
+}
+
+.windowName {
+  margin: 22px 0 27px;
+  font-size: var(--text-figure);
+  line-height: var(--leading-figure);
+  font-weight: var(--weight-medium);
+  font-variant-numeric: tabular-nums;
+}
+
+.summaryDivider {
+  margin: 47px 0 29px;
+}
+
+.summaryFeature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: var(--text-label);
+  line-height: var(--leading-label);
+  font-weight: var(--weight-medium);
+}
+
+.summaryFeature svg {
+  color: var(--color-accent);
+}
+
+.summary .featureText {
+  margin-top: 21px;
+}
+
+.editWindow {
+  align-self: flex-start;
+  width: 148px;
+  margin-top: 52px;
+}
+
+/* ── 等待登录 / 打开失败 ───────────────────────── */
+.status {
+  display: flex;
+  flex-direction: column;
+  min-height: 558px;
+  padding-bottom: 17px;
+}
+
+.statusIcon {
+  color: var(--color-accent);
+}
+
+.statusIconDanger {
+  color: var(--color-danger);
+}
+
+.statusTitle {
+  margin-top: 26px;
+  font-size: var(--text-display);
+  line-height: var(--leading-display);
+  font-weight: var(--weight-semibold);
+}
+
+.statusText {
+  margin-top: 11px;
+  color: var(--color-text-muted);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.statusDivider {
+  margin: 33px 0 33px;
+}
+
+.statusNote {
+  margin-top: 44px;
+  color: var(--color-text-muted);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.statusActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.textLink {
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.textLink:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.backButton {
+  width: 176px;
+  margin-left: auto;
+}
+
+.errorText {
+  color: var(--color-danger);
+}
+
+.adviceValue {
+  font-size: var(--text-body);
+}
+
+.retry {
+  margin-top: 77px;
+}
+
+.modeHint {
+  margin-top: 26px;
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.modeButtons {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+}

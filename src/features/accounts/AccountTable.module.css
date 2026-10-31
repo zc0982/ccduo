@@ -1,0 +1,90 @@
+.table {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 392fr) minmax(0, 256fr) minmax(0, 312fr) 126px;
+  align-items: center;
+  min-height: 72px;
+  margin: 0 23px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.head {
+  min-height: 52px;
+  margin: 0;
+  padding: 0 23px;
+  color: var(--color-text-muted);
+  font-size: var(--text-caption);
+  line-height: var(--leading-caption);
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.accountText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.name {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub {
+  color: var(--color-text-muted);
+  font-size: var(--text-micro);
+  line-height: var(--leading-micro);
+}
+
+.pending {
+  color: var(--color-accent);
+}
+
+.value {
+  min-width: 0;
+  padding-right: 16px;
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.action {
+  display: flex;
+}
+
+.switch {
+  width: 104px;
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  height: 144px;
+  color: var(--color-text-muted);
+}

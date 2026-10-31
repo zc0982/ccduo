@@ -1,0 +1,30 @@
+.tile {
+  display: grid;
+  place-items: center;
+  flex: none;
+  background: var(--color-raised);
+}
+
+.s36 {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-item);
+}
+
+.s56 {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-tile);
+}
+
+.bordered {
+  border: 1px solid var(--color-border);
+}
+
+.neutral {
+  color: var(--color-text-muted);
+}
+
+.accent {
+  color: var(--color-accent);
+}

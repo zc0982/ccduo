@@ -1,0 +1,42 @@
+.row {
+  --label-width: var(--field-label-width);
+  min-width: 0;
+}
+
+.inline {
+  display: grid;
+  grid-template-columns: var(--label-width) minmax(0, 1fr);
+  align-items: start;
+}
+
+.inline .label {
+  padding-top: 8px;
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+  white-space: nowrap;
+}
+
+.control {
+  min-width: 0;
+}
+
+.message {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-micro);
+  line-height: var(--leading-micro);
+}
+
+.error {
+  color: var(--color-danger);
+}

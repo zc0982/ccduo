@@ -1,0 +1,38 @@
+.note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+}
+
+.small {
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.micro {
+  gap: var(--space-2);
+  font-size: var(--text-micro);
+  line-height: var(--leading-micro);
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}

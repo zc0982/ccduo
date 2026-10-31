@@ -1,0 +1,146 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  width: var(--sidebar-width);
+  height: 100%;
+  background: var(--color-sunken);
+  border-right: 1px solid var(--color-border);
+}
+
+.titlebar {
+  flex: none;
+  height: 52px;
+  padding: 26px 24px 0;
+}
+
+.lights {
+  display: flex;
+  gap: 8px;
+}
+
+.lights i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-danger);
+}
+.lights i:nth-child(2) {
+  background: var(--color-accent);
+}
+.lights i:nth-child(3) {
+  background: var(--color-success);
+}
+
+.brand {
+  flex: none;
+  padding: 16px 24px 20px;
+}
+
+.nav {
+  flex: 1;
+  min-height: 0;
+  padding: 0 12px;
+  overflow-y: auto;
+}
+
+.divider {
+  height: 1px;
+  margin: 0 8px;
+  background: var(--color-border);
+}
+
+.dividerGap {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.sectionLabel {
+  padding: 23px 12px 14px;
+  color: var(--color-text-muted);
+  font-size: var(--text-micro);
+  line-height: var(--leading-micro);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius-item);
+  color: var(--color-text-muted);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
+
+.item:hover {
+  background: var(--color-overlay-hover);
+  color: var(--color-text);
+}
+
+.icon {
+  flex: none;
+}
+
+.active,
+.active:hover {
+  background: var(--color-raised);
+  color: var(--color-text);
+  font-weight: var(--weight-medium);
+}
+
+.active .icon {
+  color: var(--color-accent);
+}
+
+.footer {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  margin: 0 24px;
+  padding: 19px 0 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.workspaceName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+}
+
+.workspaceName svg {
+  color: var(--color-accent);
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: var(--text-micro);
+  line-height: var(--leading-micro);
+}
+
+a.meta:hover {
+  color: var(--color-text);
+}

@@ -1,0 +1,13 @@
+.shell {
+  display: flex;
+  height: 100%;
+  min-width: 1080px;
+  background: var(--color-canvas);
+}
+
+.main {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
